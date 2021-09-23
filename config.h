@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "Adobe Courier:pixelsize=12:antialias=true:autohint=true";
+static char *font2[] = { "Adobe Courier:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -87,7 +87,7 @@ const int boxdraw_braille = 0;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "st";
 
 /*
  * spaces per tab
@@ -107,34 +107,34 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.9;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	"#282828", /* 0 */ /* hard contrast: #1d2021 / soft contrast: #32302f */ 
+	"#cc241d", /* 1 */
+	"#689d6a", /* 2 */
+	"#a89984", /* 3 */
+	"#b16286", /* 4 */
+	"#458588", /* 5 */
+	"#98971a", /* 6 */
+	"#d79921", /* 7 */
+	"#928374", /* 8 */
+	"#fb4934", /* 9 */
+	"#8ec07c", /* 10 */
+	"#ebdbb2", /* 11 */
+	"#d3869b", /* 12 */
+	"#83a598", /* 13 */
+	"#b8bb26", /* 14 */
+	"#ffcf5d", /* 15 */
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
 	"#282828", /* 258 -> bg */
-	"#ebdbb2", /* 259 -> fg */
+	"#ffcf5d", /* 259 -> fg */
 };
 
 
