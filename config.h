@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Adobe Courier:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "Adobe Courier:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "Ubuntu Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
+static char *font2[] = { "Ubuntu Mono:style=Regular:pixelsize=12:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -111,32 +111,58 @@ float alpha = 0.9;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
-/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* 0 */ /* hard contrast: #1d2021 / soft contrast: #32302f */ 
-	"#cc241d", /* 1 */
-	"#689d6a", /* 2 */
-	"#a89984", /* 3 */
-	"#b16286", /* 4 */
-	"#458588", /* 5 */
-	"#98971a", /* 6 */
-	"#d79921", /* 7 */
-	"#928374", /* 8 */
-	"#fb4934", /* 9 */
-	"#8ec07c", /* 10 */
-	"#ebdbb2", /* 11 */
-	"#d3869b", /* 12 */
-	"#83a598", /* 13 */
-	"#b8bb26", /* 14 */
-	"#ffcf5d", /* 15 */
-	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
-	"#ffcf5d", /* 259 -> fg */
-};
+	"#230046",
+	"#5a3f7f",
+	"#337e6f",
+	"#7f6f49",
+	"#4f4a7f",
+	"#7d1625",
+	"#3f95a6",
+	"#0837c4",
 
+	"#c442f0",
+	"#a776e0",
+	"#52e0c4",
+	"#e0c386",
+	"#8e87e0",
+	"#e05167",
+	"#b5dbe3",
+	"#9db5fb",
+	[255] = 0,
+	"#bf80ff",
+	"#bc1091",
+	"#0d0218",
+	"#9db5fb",
+
+};
+/*
+ Terminal colors (16 first used in escape sequence)
+static const char *colorname[] = {
+	"#282828",    0 hard contrast: #1d2021 / soft contrast: #32302f  
+	"#cc241d",    1 
+	"#689d6a",    2 
+	"#a89984",    3 
+	"#b16286",    4 
+	"#458588",    5 
+	"#98971a",    6 
+	"#d79921",    7 
+	"#928374",    8 
+	"#fb4934",    9
+	"#8ec07c",    10
+	"#ebdbb2",    11 
+	"#d3869b",    12 
+	"#83a598",    13 
+	"#b8bb26",    14 
+	"#ffcf5d",    15 
+	[255] = 0,
+	 more colors can be added after 255 to use with DefaultXX 
+	"#add8e6",    256 -> cursor 
+	"#555555",    257 -> rev cursor
+	"#282828",    258 -> bg 
+	"#ffcf5d",    259 -> fg
+};
+*/
 
 /*
  * Default colors (colorname index)
